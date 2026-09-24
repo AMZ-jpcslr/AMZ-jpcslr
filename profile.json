@@ -1,0 +1,56 @@
+{
+  "username": "AMZ-jpcslr",
+  "name": "Kitaoka Yoma",
+  "alias": "AMZ",
+  "tagline": "Ideas into tools. Curiosity into code.",
+  "focus": [
+    "Discord bots & communication",
+    "Creative tools & web applications",
+    "AI decision-making & robotics"
+  ],
+  "about": "Discord Botや配信ツールなど、身近な課題を解決するソフトウェアを開発しています。AIの行動判断やロボットサッカーにも取り組んでいます。",
+  "portfolio": "https://portfolio-amz-jpcslr.vercel.app",
+  "skills": ["TypeScript", "JavaScript", "Python", "Java", "Node.js", "Docker"],
+  "projects": [
+    {
+      "repository": "Yomiage_Discord_Bot",
+      "title": "Yomiage Bot",
+      "category": "COMMUNICATION",
+      "description": "テキストを声に、メンションを相手の言語に。VOICEVOXとDeepLを使った読み上げ・翻訳Bot。",
+      "tags": ["TypeScript", "VOICEVOX", "DeepL"]
+    },
+    {
+      "repository": "Shindo_Discord_Bot",
+      "title": "Shindo Bot",
+      "category": "DISASTER INFORMATION",
+      "description": "地震・津波・地域別の気象情報を、いつものDiscordへ。雨雲レーダーの表示にも対応。",
+      "tags": ["TypeScript", "WebSocket", "Node.js"]
+    },
+    {
+      "repository": "Streaming-Screen",
+      "title": "Streaming Screen",
+      "category": "CREATOR TOOLS",
+      "description": "テキスト・画像・時計を自由に配置。OBSの配信画面を組み立てるレイアウトエディター。",
+      "tags": ["JavaScript", "Node.js", "OBS"]
+    },
+    {
+      "repository": "Artificial-Moral-Architecture",
+      "title": "Artificial Moral Architecture",
+      "category": "AI / RESEARCH",
+      "description": "行動前の結果予測と、複数の当事者への影響評価を組み込むAIの行動判断基盤。個人研究として開発中。",
+      "tags": ["Python", "AI", "Research"]
+    }
+  ],
+  "moreProjects": [
+    {
+      "repository": "ssl-inspection-prodxy",
+      "title": "Web Browsing Inspection Proxy",
+      "description": "HTTP / HTTPS通信を可視化する、学習・検証用プロキシ。"
+    },
+    {
+      "repository": "SSL-DEMO",
+      "title": "SSL Robot AI",
+      "description": "Javaでつくる、ロボットサッカーの2Dシミュレーター。"
+    }
+  ]
+}

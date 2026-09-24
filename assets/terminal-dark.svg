@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="466" viewBox="0 0 880 466" role="img" aria-labelledby="title desc">
+  <title id="title">Kitaoka Yoma | AMZ-jpcslr</title>
+  <desc id="desc">Ideas into tools. Curiosity into code. Discord bots &amp; communication. Creative tools &amp; web applications. AI decision-making &amp; robotics</desc>
+  <rect x="1" y="1" width="878" height="464" rx="14" fill="#0d1117" stroke="#303b49"/>
+  <path d="M15 1H865Q879 1 879 15V51H1V15Q1 1 15 1Z" fill="#1c232d"/>
+  <path d="M1 51H879" stroke="#303b49"/>
+  <circle cx="27" cy="26" r="6" fill="#ef6b67"/><circle cx="49" cy="26" r="6" fill="#e6bd4f"/><circle cx="71" cy="26" r="6" fill="#69c269"/>
+  <g font-family="'Cascadia Code', Consolas, 'Liberation Mono', monospace">
+  <text x="105" y="31" fill="#a2afbf" font-size="15" >profile.sh</text>
+  <text x="850" y="31" fill="#a2afbf" font-size="14" text-anchor="end">~ / amz</text>
+  <text x="36" y="98" fill="#7ee787" font-size="22" >❯</text><text x="62" y="98" fill="#e6edf3" font-size="20" >whoami</text>
+  <text x="36" y="160" fill="#e6edf3" font-size="44" font-weight="700">Kitaoka Yoma</text>
+  <text x="38" y="193" fill="#7ee787" font-size="18" >@AMZ-jpcslr</text>
+  <text x="38" y="229" fill="#a2afbf" font-size="18" >Ideas into tools. Curiosity into code.</text>
+  <path d="M36 253H844" stroke="#303b49"/>
+  <text x="36" y="293" fill="#7ee787" font-size="22" >❯</text><text x="62" y="293" fill="#e6edf3" font-size="20" >cat focus.txt</text>
+  <text x="39" y="330" fill="#7ee787" font-size="19" >→</text><text x="69" y="330" fill="#a5c9ff" font-size="19" >Discord bots &amp; communication</text>
+  <text x="39" y="364" fill="#7ee787" font-size="19" >→</text><text x="69" y="364" fill="#a5c9ff" font-size="19" >Creative tools &amp; web applications</text>
+  <text x="39" y="398" fill="#7ee787" font-size="19" >→</text><text x="69" y="398" fill="#a5c9ff" font-size="19" >AI decision-making &amp; robotics</text>
+  <rect x="22" y="421" width="836" height="30" rx="5" fill="#101820"/>
+  <text x="37" y="441" fill="#7ee787" font-size="14" >~ / projects</text>
+  <text x="839" y="441" fill="#a2afbf" font-size="14" text-anchor="end">explore below ↓</text>
+  </g>
+</svg>

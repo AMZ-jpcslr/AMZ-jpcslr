@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="438" viewBox="0 0 480 438" role="img" aria-labelledby="title desc">
+<title id="title">Kitaoka Yoma | AMZ-jpcslr</title><desc id="desc">Ideas into tools. Curiosity into code. Discord bots &amp; communication. Creative tools &amp; web applications. AI decision-making &amp; robotics</desc>
+<rect x="1" y="1" width="478" height="436" rx="12" fill="#ffffff" stroke="#cbd3dc"/>
+<path d="M13 1H467Q479 1 479 13V45H1V13Q1 1 13 1Z" fill="#eaeef2"/><path d="M1 45H479" stroke="#cbd3dc"/>
+<circle cx="23" cy="24" r="5" fill="#ef6b67"/><circle cx="41" cy="24" r="5" fill="#e6bd4f"/><circle cx="59" cy="24" r="5" fill="#69c269"/>
+<g font-family="'Cascadia Code', Consolas, 'Liberation Mono', monospace">
+<text x="88" y="29" fill="#596674" font-size="15" >profile.sh</text>
+<text x="26" y="84" fill="#176c38" font-size="19" >❯ whoami</text>
+<text x="26" y="130" fill="#1f2328" font-size="34" font-weight="700">Kitaoka Yoma</text>
+<text x="27" y="159" fill="#176c38" font-size="17" >@AMZ-jpcslr</text>
+<text x="27" y="195" fill="#596674" font-size="17" >Ideas into tools. Curiosity into code.</text>
+<path d="M26 206H454" stroke="#cbd3dc"/>
+<text x="26" y="241" fill="#1f2328" font-size="19" >❯ cat focus.txt</text>
+<text x="26" y="272" fill="#176c38" font-size="18" >→</text>
+<text x="52" y="272" fill="#2456a6" font-size="18" >Discord bots &amp; communication</text>
+<text x="26" y="308" fill="#176c38" font-size="18" >→</text>
+<text x="52" y="308" fill="#2456a6" font-size="18" >Creative tools &amp; web applications</text>
+<text x="26" y="344" fill="#176c38" font-size="18" >→</text>
+<text x="52" y="344" fill="#2456a6" font-size="18" >AI decision-making &amp; robotics</text>
+<rect x="16" y="392" width="448" height="30" rx="5" fill="#edf4ef"/>
+<text x="27" y="413" fill="#176c38" font-size="14" >~/projects</text>
+<text x="452" y="413" fill="#596674" font-size="14" text-anchor="end">explore below ↓</text>
+</g></svg>

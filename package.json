@@ -1,0 +1,13 @@
+{
+  "name": "amz-github-profile",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Terminal-style GitHub profile for AMZ-jpcslr",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/generate.mjs",
+    "check": "node scripts/generate.mjs --check",
+    "preview": "node scripts/serve.mjs"
+  }
+}
