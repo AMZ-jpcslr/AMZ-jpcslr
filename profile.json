@@ -1,56 +1,134 @@
 {
   "username": "AMZ-jpcslr",
-  "name": "Kitaoka Yoma",
+  "name": "北岡 英磨",
+  "nameEn": "Yoma Kitaoka",
   "alias": "AMZ",
-  "tagline": "Ideas into tools. Curiosity into code.",
+  "tagline": "身近な課題から、使えるものを。",
+  "about": "PdMを目指し、個人開発と個人研究に取り組んでいます。身近な不便や友人との会話をきっかけに、WebアプリやDiscord Botをつくり、使う人の声を聞きながら改善しています。AIの行動前の影響評価や、ロボットサッカーの位置評価にも取り組んできました。",
+  "portfolio": "https://portfolio-amz-jpcslr.vercel.app/",
   "focus": [
-    "Discord bots & communication",
-    "Creative tools & web applications",
-    "AI decision-making & robotics"
+    "課題を理解する",
+    "試して改善する",
+    "伝わる形にする"
   ],
-  "about": "Discord Botや配信ツールなど、身近な課題を解決するソフトウェアを開発しています。AIの行動判断やロボットサッカーにも取り組んでいます。",
-  "portfolio": "https://portfolio-amz-jpcslr.vercel.app",
-  "skills": ["TypeScript", "JavaScript", "Python", "Java", "Node.js", "Docker"],
+  "skills": [
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "Java",
+    "Node.js",
+    "Docker"
+  ],
   "projects": [
     {
-      "repository": "Yomiage_Discord_Bot",
-      "title": "Yomiage Bot",
-      "category": "COMMUNICATION",
-      "description": "テキストを声に、メンションを相手の言語に。VOICEVOXとDeepLを使った読み上げ・翻訳Bot。",
-      "tags": ["TypeScript", "VOICEVOX", "DeepL"]
+      "slug": "mania",
+      "repository": "train_time",
+      "title": "まにあう",
+      "category": "Webアプリ",
+      "color": "#e6ce9e",
+      "status": "運用中",
+      "description": "いつもの駅の時刻表と、駅まで歩く時間をもとに、次に乗れる電車の目安を表示するアプリです。",
+      "tags": [
+        "React",
+        "TypeScript",
+        "Vite"
+      ]
     },
     {
-      "repository": "Shindo_Discord_Bot",
-      "title": "Shindo Bot",
-      "category": "DISASTER INFORMATION",
-      "description": "地震・津波・地域別の気象情報を、いつものDiscordへ。雨雲レーダーの表示にも対応。",
-      "tags": ["TypeScript", "WebSocket", "Node.js"]
+      "slug": "career",
+      "repository": "Syukatu-Note",
+      "title": "しゅうかつ手帳",
+      "category": "予定管理",
+      "color": "#c7d1b5",
+      "status": "運用中",
+      "description": "公開募集を自分用に引用し、応募・締切・選考の予定をまとめて管理するWebアプリです。友人に使ってもらいながら改善しています。",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Supabase"
+      ]
     },
     {
+      "slug": "stream",
       "repository": "Streaming-Screen",
       "title": "Streaming Screen",
-      "category": "CREATOR TOOLS",
-      "description": "テキスト・画像・時計を自由に配置。OBSの配信画面を組み立てるレイアウトエディター。",
-      "tags": ["JavaScript", "Node.js", "OBS"]
+      "category": "配信ツール",
+      "color": "#dec6b8",
+      "status": "運用中",
+      "description": "テキスト・画像・時計を配置し、保存した画面をOBSへ出力できるエディターです。配信者からの依頼で制作しました。",
+      "tags": [
+        "JavaScript",
+        "Node.js",
+        "OBS"
+      ]
     },
     {
+      "slug": "voice",
+      "repository": "Yomiage_Discord_Bot",
+      "title": "Yomiage Bot",
+      "category": "Discord Bot",
+      "color": "#c8d9dc",
+      "status": "運用中",
+      "description": "声を出せないときも会話に参加できるように、Discordのテキストを読み上げ、相手に合わせて翻訳するBotをつくりました。",
+      "tags": [
+        "TypeScript",
+        "VOICEVOX",
+        "DeepL"
+      ]
+    },
+    {
+      "slug": "weather",
+      "repository": "Shindo_Discord_Bot",
+      "title": "Shindo Bot",
+      "category": "Discord Bot",
+      "color": "#ddd9b5",
+      "status": "運用中",
+      "description": "普段開いているDiscordで地震や気象の情報に気づけるように、通知を届けるBotをつくりました。",
+      "tags": [
+        "TypeScript",
+        "WebSocket",
+        "Node.js"
+      ]
+    },
+    {
+      "slug": "moral",
       "repository": "Artificial-Moral-Architecture",
       "title": "Artificial Moral Architecture",
-      "category": "AI / RESEARCH",
-      "description": "行動前の結果予測と、複数の当事者への影響評価を組み込むAIの行動判断基盤。個人研究として開発中。",
-      "tags": ["Python", "AI", "Research"]
-    }
-  ],
-  "moreProjects": [
-    {
-      "repository": "ssl-inspection-prodxy",
-      "title": "Web Browsing Inspection Proxy",
-      "description": "HTTP / HTTPS通信を可視化する、学習・検証用プロキシ。"
+      "category": "AIの個人研究",
+      "color": "#d6c9dd",
+      "status": "研究中",
+      "description": "行動前の予測と、影響を受ける当事者の評価を、AIの行動選択につなぐ仕組みを研究しています。固定ルールと合成シナリオで検証しています。",
+      "tags": [
+        "Python",
+        "AI"
+      ]
     },
     {
+      "slug": "proxy",
+      "repository": "ssl-inspection-prodxy",
+      "title": "Inspection Proxy",
+      "category": "通信の可視化",
+      "color": "#d7cfb5",
+      "status": "運用中",
+      "description": "通信の内容と検出結果を可視化し、何がやり取りされているかを確認するためのプロキシです。",
+      "tags": [
+        "HTTP",
+        "HTTPS",
+        "Proxy"
+      ]
+    },
+    {
+      "slug": "soccer",
       "repository": "SSL-DEMO",
       "title": "SSL Robot AI",
-      "description": "Javaでつくる、ロボットサッカーの2Dシミュレーター。"
+      "category": "ロボットサッカー",
+      "color": "#bdd0be",
+      "status": "一部実機採用",
+      "description": "移動先やパス相手を考えるための位置評価シミュレーターです。位置評価の仕組みを、チームへの導入用プロトタイプとして活用してもらいました。",
+      "tags": [
+        "Java",
+        "Simulation"
+      ]
     }
   ]
 }
