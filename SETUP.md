@@ -1,9 +1,16 @@
-# プロフィールの編集と確認
+# GitHubプロフィールの編集
 
-このフォルダは `https://github.com/AMZ-jpcslr/AMZ-jpcslr` 用のプロフィールです。
-READMEの文章・作品・技術は `profile.json`、ノートや本のSVGとREADMEの組み立ては `scripts/generate.mjs` で管理します。
+公開先は [AMZ-jpcslr/AMZ-jpcslr](https://github.com/AMZ-jpcslr/AMZ-jpcslr) です。GitHubのOverviewにはリポジトリ直下のREADMEと、その中で参照する画像が表示されます。
 
-Node.js 22以上で、追加パッケージなしで実行できます。
+## 内容と画像を変える
+
+- 自己紹介・スキル・作品・掲載順は `profile.json` を編集します。各作品の `slug` はポートフォリオ詳細ページのパス、`repository` はGitHubリポジトリ名です。
+- 表紙は `assets/workshop/cover.png`、作品のサムネイルは `assets/workshop/<slug>.webp` です。元の画像と注記は [参照元](docs/SOURCES.md) に記録しています。
+- `description` は短い用途説明、`imageAlt` は画像の説明、任意の `caption` は再現画面などの注記です。表紙に印刷された名前やコピーは画像を差し替えて変更します。
+
+## 再生成・確認
+
+Node.js 22以上で、パッケージのインストールは不要です。
 
 ```sh
 npm run build
@@ -11,21 +18,8 @@ npm run check
 npm run preview
 ```
 
-`http://127.0.0.1:4175` でプレビューを開き、PC・スマートフォンの幅とLight / Darkで確認してください。ポートが使用中の場合は環境変数 `PORT` で変更できます。
+[ローカルプレビュー](http://127.0.0.1:4175)を開きます。`preview.html` を直接開いても同じ画像を確認できます。Light / Dark の切替はローカル専用です。GitHubでは閲覧者のテーマで本文とリンクの色が決まり、紙色の表紙とサムネイルは共通です。
 
-## GitHubでの表示
+## 反映
 
-- READMEは通常のHTML、リンク、`picture`、SVG画像だけで構成しています。README内のJavaScriptや独自CSSは不要です。
-- 540px以下では、表紙と作品の背表紙をスマートフォン用SVGに切り替えます。作品は縦に並ぶため、横スクロールする表を使いません。
-- 画像の文字と同じ作品名を代替テキストに入れています。説明、技術、詳細ページとコードへのリンクは通常のテキストです。
-- SVGは外部フォント・外部画像・スクリプト・`foreignObject`に依存しません。日本語フォントは閲覧環境の明朝体・ゴシック体を使います。
-- 表紙の付箋だけが、SVG内のCSSアニメーションで順に収まります。約1.2秒の1回再生で停止し、本文・作品一覧は動きません。画像の読み込み時に再生するため、スクロールやホバーで再生を制御しません。
-- `prefers-reduced-motion: reduce` では通常の静止SVGを選択します。動きの指定を解釈できない環境も静止SVGにフォールバックします。SVG内部にも軽減指定を入れていますが、画像内部への設定の反映はブラウザーによるため、README側の `picture` による静止画選択で対応します。CSSが無効でも完成状態を表示します。
-- `preview.html` のテーマ切替はローカル確認用です。GitHubの実際の余白やフォントは環境によって異なります。
-- 作品の現状はポートフォリオに合わせた記録です。自動同期ではないため、更新時は `profile.json` も見直してください。
-
-## 公開する前に
-
-`npm run check` と `git diff --check` を実行し、READMEと `assets/` の新しい画像を一緒に確認してください。`preview.html` 自体をGitHub Pagesへ公開する必要はありません。
-
-公開時は、確認したREADMEと画像を同じコミットに含めて既存ブランチへpushしてください。ローカルのプレビューだけで完了とせず、公開プロフィールで画像・リンク・スマートフォン表示も確認します。
+`git diff --check` とプレビューを確認し、設定・生成プログラム・README・画像を一緒にコミットして、プロフィールリポジトリの既定ブランチにpushします。GitHub PagesやVercelの再デプロイは不要です。

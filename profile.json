@@ -2,133 +2,18 @@
   "username": "AMZ-jpcslr",
   "name": "北岡 英磨",
   "nameEn": "Yoma Kitaoka",
-  "alias": "AMZ",
-  "tagline": "身近な課題から、使えるものを。",
-  "about": "PdMを目指し、個人開発と個人研究に取り組んでいます。身近な不便や友人との会話をきっかけに、WebアプリやDiscord Botをつくり、使う人の声を聞きながら改善しています。AIの行動前の影響評価や、ロボットサッカーの位置評価にも取り組んできました。",
   "portfolio": "https://portfolio-amz-jpcslr.vercel.app/",
-  "focus": [
-    "課題を理解する",
-    "試して改善する",
-    "伝わる形にする"
-  ],
-  "skills": [
-    "TypeScript",
-    "JavaScript",
-    "Python",
-    "Java",
-    "Node.js",
-    "Docker"
-  ],
+  "affiliation": "立命館大学 情報理工学部",
+  "about": "普段使う駅で次の電車を知りたいときや、声を出せずにDiscordの会話に入りづらいとき。そんな場面からアプリやBotをつくっています。使う人に試してもらい、最初に見たい情報や迷った操作を聞いて、次の改善を決めています。",
+  "skills": ["画面設計", "ボット開発", "AI研究"],
   "projects": [
-    {
-      "slug": "mania",
-      "repository": "train_time",
-      "title": "まにあう",
-      "category": "Webアプリ",
-      "color": "#e6ce9e",
-      "status": "運用中",
-      "description": "いつもの駅の時刻表と、駅まで歩く時間をもとに、次に乗れる電車の目安を表示するアプリです。",
-      "tags": [
-        "React",
-        "TypeScript",
-        "Vite"
-      ]
-    },
-    {
-      "slug": "career",
-      "repository": "Syukatu-Note",
-      "title": "しゅうかつ手帳",
-      "category": "予定管理",
-      "color": "#c7d1b5",
-      "status": "運用中",
-      "description": "公開募集を自分用に引用し、応募・締切・選考の予定をまとめて管理するWebアプリです。友人に使ってもらいながら改善しています。",
-      "tags": [
-        "Next.js",
-        "TypeScript",
-        "Supabase"
-      ]
-    },
-    {
-      "slug": "stream",
-      "repository": "Streaming-Screen",
-      "title": "Streaming Screen",
-      "category": "配信ツール",
-      "color": "#dec6b8",
-      "status": "運用中",
-      "description": "テキスト・画像・時計を配置し、保存した画面をOBSへ出力できるエディターです。配信者からの依頼で制作しました。",
-      "tags": [
-        "JavaScript",
-        "Node.js",
-        "OBS"
-      ]
-    },
-    {
-      "slug": "voice",
-      "repository": "Yomiage_Discord_Bot",
-      "title": "Yomiage Bot",
-      "category": "Discord Bot",
-      "color": "#c8d9dc",
-      "status": "運用中",
-      "description": "声を出せないときも会話に参加できるように、Discordのテキストを読み上げ、相手に合わせて翻訳するBotをつくりました。",
-      "tags": [
-        "TypeScript",
-        "VOICEVOX",
-        "DeepL"
-      ]
-    },
-    {
-      "slug": "weather",
-      "repository": "Shindo_Discord_Bot",
-      "title": "Shindo Bot",
-      "category": "Discord Bot",
-      "color": "#ddd9b5",
-      "status": "運用中",
-      "description": "普段開いているDiscordで地震や気象の情報に気づけるように、通知を届けるBotをつくりました。",
-      "tags": [
-        "TypeScript",
-        "WebSocket",
-        "Node.js"
-      ]
-    },
-    {
-      "slug": "moral",
-      "repository": "Artificial-Moral-Architecture",
-      "title": "Artificial Moral Architecture",
-      "category": "AIの個人研究",
-      "color": "#d6c9dd",
-      "status": "研究中",
-      "description": "行動前の予測と、影響を受ける当事者の評価を、AIの行動選択につなぐ仕組みを研究しています。固定ルールと合成シナリオで検証しています。",
-      "tags": [
-        "Python",
-        "AI"
-      ]
-    },
-    {
-      "slug": "proxy",
-      "repository": "ssl-inspection-prodxy",
-      "title": "Inspection Proxy",
-      "category": "通信の可視化",
-      "color": "#d7cfb5",
-      "status": "運用中",
-      "description": "通信の内容と検出結果を可視化し、何がやり取りされているかを確認するためのプロキシです。",
-      "tags": [
-        "HTTP",
-        "HTTPS",
-        "Proxy"
-      ]
-    },
-    {
-      "slug": "soccer",
-      "repository": "SSL-DEMO",
-      "title": "SSL Robot AI",
-      "category": "ロボットサッカー",
-      "color": "#bdd0be",
-      "status": "一部実機採用",
-      "description": "移動先やパス相手を考えるための位置評価シミュレーターです。位置評価の仕組みを、チームへの導入用プロトタイプとして活用してもらいました。",
-      "tags": [
-        "Java",
-        "Simulation"
-      ]
-    }
+    {"slug":"mania","repository":"train_time","title":"まにあう","category":"交通アプリ","description":"駅まで歩く時間と時刻表から、今出たらどの電車に乗れそうかを調べる。","imageAlt":"まにあうのスマートフォン画面"},
+    {"slug":"career","repository":"Syukatu-Note","title":"しゅうかつ手帳","category":"就活カレンダー","description":"応募の締切と選考予定をひとつのカレンダーで見渡す。","imageAlt":"応募と選考の予定を並べたカレンダー"},
+    {"slug":"stream","repository":"Streaming-Screen","title":"Streaming Screen","category":"配信ツール","description":"文字・画像・時計を配置して、保存したレイアウトをOBSの配信画面に反映する。","imageAlt":"配信レイアウトの編集画面"},
+    {"slug":"voice","repository":"Yomiage_Discord_Bot","title":"Yomiage Bot","category":"読み上げBot","description":"声を出せないときも、テキストを読み上げてDiscordの通話に参加できる。","imageAlt":"Discordでの読み上げ操作の再現画面","caption":"操作例（再現）"},
+    {"slug":"weather","repository":"Shindo_Discord_Bot","title":"Shindo Bot","category":"防災通知Bot","description":"普段開いているDiscordで、地震や地域の気象情報を受け取る。","imageAlt":"Shindo Botが出力した画像","caption":"Botの出力画像"},
+    {"slug":"moral","repository":"Artificial-Moral-Architecture","title":"Artificial Moral Architecture","category":"個人研究","description":"AIが行動する前に、その選択が誰にどんな影響を与えるかを評価する研究。","imageAlt":"AIの行動判断を検証する画面"},
+    {"slug":"proxy","repository":"ssl-inspection-prodxy","title":"Inspection Proxy","category":"通信検査ツール","description":"ブラウザーの通信を記録し、どんな内容がやり取りされたかをログで確かめる。","imageAlt":"通信検査のログ画面"},
+    {"slug":"soccer","repository":"SSL-DEMO","title":"SSL Robot AI","category":"2Dシミュレーション","description":"ロボットの位置を評価し、移動先やパスの選び方をフィールド上で比較する。","imageAlt":"ロボットサッカーの2Dフィールド"}
   ]
 }

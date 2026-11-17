@@ -1,25 +1,11 @@
-# デザイン・内容の参照
+# 制作ノート版の参照元
 
-確認日: 2026-10-28
+2026-11-17（日本時間）に、[公開ポートフォリオ](https://portfolio-amz-jpcslr.vercel.app/)の配信内容を確認しました。以前の本棚版のローカルチェックアウトではなく、公開版の「北岡 英磨の制作ノート」を参照しています。
 
-- 既存プロジェクト: `C:\Users\yomas\github\Github_Profile`
-- プロフィールのremote: `https://github.com/AMZ-jpcslr/AMZ-jpcslr.git`
-- 参照ポートフォリオ: `C:\Users\yomas\github\Portfolio` / `master` / `337f2fd`
-- 公開ポートフォリオ: <https://portfolio-amz-jpcslr.vercel.app/>
-- 名前・説明: `site/index.html`、`site/music/author-narratives.js`
-- 8作品・作品URL・現状: `site/music/content.js`、`site/music/author-narratives.js`、`dist/projects.js`
-- 色: `site/music/music.css`、`site/music/books.css`、`site/music/paper.css`、`content.js` の `bookColors`
-- 技術一覧: 既存プロフィールを継承。作品ごとの技術は既存プロフィールとポートフォリオを参照。
+- 表紙: 公開サイトの [共有用イラスト](https://portfolio-amz-jpcslr.vercel.app/og-image.png?v=workshop-20261116) をそのまま使用。
+- 自己紹介・スキル: [メッセージ](https://portfolio-amz-jpcslr.vercel.app/#message)と [About Me](https://portfolio-amz-jpcslr.vercel.app/about/) の公開内容をもとに、GitHub用に短く編集。
+- 作品の順番、用途、分類、表示画像の種類: [Works](https://portfolio-amz-jpcslr.vercel.app/#works)。各作品の詳細ページに記載されたGitHubリンクを照合。
+- 作品画像: Worksの各カードの画像領域（端末枠を含む）を静止画として収録。表示名や用途はREADMEのテキストとして別に掲載。再現画面とBot出力の注記を保持。
+- 更新時は公開サイトの `#work-<slug> .work-stage` を再確認し、該当するサムネイルを差し替える。ページ全体やデモ動画は複製していません。
 
-本の布張りの色、深緑、生成りのノート、罫線、色違いの付箋をSVGとして描き直しました。表紙の付箋のみ、SVG内の宣言的CSSアニメーションで約1.2秒間、1回動かします。通常の文章と作品一覧は静止表示です。素材のダウンロード、外部バッジ、アクセス解析は使っていません。利用人数や改善率などの数値は追加していません。
-
-## READMEのアニメーション方式
-
-- [GitHub公式: 基本の構文](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax): 画像と `picture` に対応。
-- [W3C SVG 2: secure animated mode](https://www.w3.org/TR/SVG2/conform.html#secure-animated-mode): 画像としてのSVGで宣言的アニメーションを有効にし、スクリプトや外部参照を無効にする処理モード。
-- [MDN: SVG as an image](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_as_an_image): `img`内のSVGではJavaScriptや外部リソースが制限される。
-- [公開READMEでの実例: Platane/snk](https://github.com/Platane/snk): SVGアニメーションをGitHubのREADMEに埋め込む実装例。確認にのみ使用し、素材やコードは流用していません。
-
-READMEにはアニメーションSVGを画像として読み込むだけで、README側のJavaScript・CSS・ホバー操作を前提にしません。`picture` で reduced motion に応じた静止SVGを選び、SVG内部にも軽減指定を保持します。ローカルのプレビューに加え、公開後のプロフィールでも画像・アニメーション・静止表示を確認します。
-
-READMEと画像は `npm run build` で生成します。古いterminal / skill画像は以前の履歴用に残していますが、現在のREADMEからは参照していません。
+配信先や外部APIをビルド時に呼ばず、表紙と8枚のサムネイルをこのリポジトリから配信します。

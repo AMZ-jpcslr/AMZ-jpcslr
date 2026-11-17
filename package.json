@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Books and notebook GitHub profile for AMZ-jpcslr",
+  "description": "Workshop portfolio and illustrated GitHub profile for AMZ-jpcslr",
   "engines": {"node": ">=22"},
   "scripts": {
     "build": "node scripts/generate.mjs",
