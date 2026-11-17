@@ -1,4 +1,5 @@
 import {readFile, writeFile, mkdir} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
 import {hero,divider} from './clockwork-art.mjs';
 
 const root=new URL('../',import.meta.url);
@@ -20,8 +21,9 @@ for(const pr of p.projects){
 const a=(url,label)=>'<a href="'+e(url)+'">'+label+'</a>';
 const repo=pr=>'https://github.com/'+p.username+'/'+pr.repository;
 const detail=pr=>new URL('projects/'+pr.slug+'/',site).href;
-const image=(name,alt)=>'<img src="assets/clockwork/'+name+'.svg" width="100%" alt="'+e(alt)+'">';
-const heroTag='<picture>\n<source media="(prefers-reduced-motion: reduce) and (max-width: 540px)" srcset="assets/clockwork/hero-static-mobile.svg">\n<source media="(prefers-reduced-motion: reduce)" srcset="assets/clockwork/hero-static.svg">\n<source media="(max-width: 540px)" srcset="assets/clockwork/hero-mobile.svg">\n'+image('hero',p.name+' / '+p.nameEn+' — Clockwork Atelier。真鍮の歯車と緑の光を重ねた工房の紋章。')+'\n</picture>';
+const version='?v='+createHash('sha256').update(hero(p)).digest('hex').slice(0,12);
+const image=(name,alt)=>'<img src="assets/clockwork/'+name+'.svg'+version+'" width="100%" alt="'+e(alt)+'">';
+const heroTag='<picture>\n<source media="(prefers-reduced-motion: reduce) and (max-width: 540px)" srcset="assets/clockwork/hero-static-mobile.svg'+version+'">\n<source media="(prefers-reduced-motion: reduce)" srcset="assets/clockwork/hero-static.svg'+version+'">\n<source media="(max-width: 540px)" srcset="assets/clockwork/hero-mobile.svg'+version+'">\n'+image('hero',p.name+' / '+p.nameEn+' — Clockwork Atelier。真鍮の歯車と緑の光を重ねた工房の紋章。')+'\n</picture>';
 const group=(items,start)=>'<table>\n'+items.map((pr,i)=>'<tr>\n<td>\n<sub>'+String(start+i+1).padStart(2,'0')+' / '+e(pr.category)+'</sub><br>\n<strong>'+a(repo(pr),e(pr.title))+'</strong><br>\n'+e(pr.description)+'<br>\n'+a(repo(pr),'コード ↗')+'　·　'+a(detail(pr),'制作の背景 ↗')+'\n</td>\n</tr>').join('\n')+'\n</table>';
 const content=[
 a(site.href,heroTag),
