@@ -1,11 +1,15 @@
-# 制作ノート版の参照元
+# デザインと掲載内容の根拠
 
-2026-11-17（日本時間）に、[公開ポートフォリオ](https://portfolio-amz-jpcslr.vercel.app/)の配信内容を確認しました。以前の本棚版のローカルチェックアウトではなく、公開版の「北岡 英磨の制作ノート」を参照しています。
+更新日: 2026-11-18（日本時間）。
 
-- 表紙: 公開サイトの [共有用イラスト](https://portfolio-amz-jpcslr.vercel.app/og-image.png?v=workshop-20261116) をそのまま使用。
-- 自己紹介・スキル: [メッセージ](https://portfolio-amz-jpcslr.vercel.app/#message)と [About Me](https://portfolio-amz-jpcslr.vercel.app/about/) の公開内容をもとに、GitHub用に短く編集。
-- 作品の順番、用途、分類、表示画像の種類: [Works](https://portfolio-amz-jpcslr.vercel.app/#works)。各作品の詳細ページに記載されたGitHubリンクを照合。
-- 作品画像: Worksの各カードの画像領域（端末枠を含む）を静止画として収録。表示名や用途はREADMEのテキストとして別に掲載。再現画面とBot出力の注記を保持。
-- 更新時は公開サイトの `#work-<slug> .work-stage` を再確認し、該当するサムネイルを差し替える。ページ全体やデモ動画は複製していません。
+ユーザー指定は「ポートフォリオの見た目をそのまままねるのではなく、異世界・サイバーパンク・歯車という世界観を合わせる」です。
 
-配信先や外部APIをビルド時に呼ばず、表紙と8枚のサムネイルをこのリポジトリから配信します。
+今回はGitHub専用にClockwork Atelierという意匠を作成しました。真鍮の歯車、計器の目盛り、青緑の光、深い緑の盤面を組み合わせています。イラストや作品スクリーンショットは流用していません。SVGは `scripts/clockwork-art.mjs` で幾何形状から生成します。
+
+掲載する名前・所属・自己紹介・8作品の説明とリンクは前版で照合したものを継承しています。
+
+- [ポートフォリオ](https://portfolio-amz-jpcslr.vercel.app/)
+- [自己紹介と経歴](https://portfolio-amz-jpcslr.vercel.app/about/)
+- [作品一覧](https://portfolio-amz-jpcslr.vercel.app/#works)
+
+「工房の主」「仕組みの標本」「探究の記録」はプロフィールの章立てです。職位や技術評価、運用実績を示す言葉としては使っていません。実績値やランキングを装飾として追加していません。

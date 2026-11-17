@@ -1,16 +1,10 @@
-# GitHubプロフィールの編集
+# Clockwork Atelier — GitHubプロフィール
 
-公開先は [AMZ-jpcslr/AMZ-jpcslr](https://github.com/AMZ-jpcslr/AMZ-jpcslr) です。GitHubのOverviewにはリポジトリ直下のREADMEと、その中で参照する画像が表示されます。
+GitHub専用の「異世界の機械工房」をモチーフにしています。真鍮の歯車、深緑の盤面、青緑の計器の光を組み合わせ、ポートフォリオの表紙や作品画像は表示しません。
 
-## 内容と画像を変える
+## 編集と確認
 
-- 自己紹介・スキル・作品・掲載順は `profile.json` を編集します。各作品の `slug` はポートフォリオ詳細ページのパス、`repository` はGitHubリポジトリ名です。
-- 表紙は `assets/workshop/cover.png`、作品のサムネイルは `assets/workshop/<slug>.webp` です。元の画像と注記は [参照元](docs/SOURCES.md) に記録しています。
-- `description` は短い用途説明、`imageAlt` は画像の説明、任意の `caption` は再現画面などの注記です。表紙に印刷された名前やコピーは画像を差し替えて変更します。
-
-## 再生成・確認
-
-Node.js 22以上で、パッケージのインストールは不要です。
+Node.js 22以上で動作します。パッケージのインストールや外部APIは不要です。
 
 ```sh
 npm run build
@@ -18,8 +12,14 @@ npm run check
 npm run preview
 ```
 
-[ローカルプレビュー](http://127.0.0.1:4175)を開きます。`preview.html` を直接開いても同じ画像を確認できます。Light / Dark の切替はローカル専用です。GitHubでは閲覧者のテーマで本文とリンクの色が決まり、紙色の表紙とサムネイルは共通です。
+[プレビュー](http://127.0.0.1:4175)または `preview.html` を開きます。Light / Darkは本文の見え方の確認用です。ヘッダーは両テーマ共通の深緑で、540px以下では縦型の画像を使います。実際のGitHubではGitHub側の本文スタイルに従います。
 
-## 反映
+- `profile.json`: 名前、自己紹介、所属、スキル、作品、掲載順。最初の5作品は「仕組みの標本」、残りは「探究の記録」に表示します。
+- `scripts/clockwork-art.mjs`: 歯車・計器・表紙のSVGを生成します。
+- `scripts/generate.mjs`: READMEとプレビューの組み立て。
+- `scripts/preview-template.html`: ローカル確認用の枠とテーマ切替。
+- `assets/clockwork/`: 自動生成する画像。直接編集すると再生成で上書きします。
 
-`git diff --check` とプレビューを確認し、設定・生成プログラム・README・画像を一緒にコミットして、プロフィールリポジトリの既定ブランチにpushします。GitHub PagesやVercelの再デプロイは不要です。
+作品名と「コード」はGitHubへ、「制作の背景」はポートフォリオの作品ページへ移動します。現在の画像にはアニメーション、外部フォント、スクリプト、外部画像を使っていません。
+
+`npm run check` と `git diff --check` の後に、READMEと生成画像を同じコミットに含めてpushすると、Overviewに反映されます。GitHub Pagesは不要です。旧デザインの画像は履歴用に残っていますが、現在のREADMEは参照しません。
