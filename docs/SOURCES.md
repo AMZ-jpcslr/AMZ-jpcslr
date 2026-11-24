@@ -1,17 +1,12 @@
 # デザインと掲載内容の根拠
 
-更新日: 2026-11-18（日本時間）。
+更新日: 2026-11-25（日本時間）。
 
-ユーザー指定は「ポートフォリオの見た目をそのまままねるのではなく、異世界・サイバーパンク・歯車という世界観を合わせる」です。
+ユーザー指定は「新しくしたポートフォリオと同じ雰囲気にしたい」です。前版（Clockwork Atelier、深緑の盤面）から、ポートフォリオの昼の工房ノートの見た目へ全面的に切り替えました。
 
-今回はGitHub専用にClockwork Atelierという意匠を作成しました。真鍮の歯車、計器の目盛り、青緑の光、深い緑の盤面を組み合わせています。イラストや作品スクリーンショットは流用していません。SVGは `scripts/clockwork-art.mjs` で幾何形状から生成します。
+- 色: ポートフォリオの `:root` の値（紙 #f8f3e7、インク #3d3433、緑 #405a50、朱 #985333、線 #c9c0aa、真鍮 #cba569 ほか）と、夜の工房 `data-workshop="night"` の値。
+- 形: 真鍮12枚歯・緑8枚歯の歯車は `notebook/gears/brass-12.svg` と `green-8.svg` の形をそのまま使っています。黒いキー帽の英字ラベル、真鍮の札、方眼紙のカード、真鍮の額縁に入った作品画面、緑の名前札もポートフォリオに合わせています。
+- 画像: [AMZ-jpcslr/Portfolio](https://github.com/AMZ-jpcslr/Portfolio) の `site/assets/workshop/working.webp`・`guide.webp` と、各作品の画面（`site/assets/works/`、`site/recordings/media/`、`site/interaction-demos/media/`）を縮小して使っています。
+- 文言: 名前・所属・自己紹介・8作品の説明とリンクは前版から継承。ヘッダーの一文とツール使用歴・スキルはポートフォリオのトップページに合わせました。
 
-掲載する名前・所属・自己紹介・8作品の説明とリンクは前版で照合したものを継承しています。
-
-- [ポートフォリオ](https://portfolio-amz-jpcslr.vercel.app/)
-- [自己紹介と経歴](https://portfolio-amz-jpcslr.vercel.app/about/)
-- [作品一覧](https://portfolio-amz-jpcslr.vercel.app/#works)
-
-見出しは「自己紹介」「アプリ・Bot」「研究・検証」です。決め台詞のようなコピーを避け、名前・所属・開発内容を表示します。実績値やランキングを装飾として追加していません。
-
-歯車の回転は中心の位置を固定し、歯数20・12・10に対して周期90秒・54秒・45秒としています。大歯車に接する2個を逆方向へ回します。動きを減らす設定では静止画像を表示します。
+参照: [ポートフォリオ](https://portfolio-amz-jpcslr.vercel.app/)・[自己紹介と経歴](https://portfolio-amz-jpcslr.vercel.app/about/)
