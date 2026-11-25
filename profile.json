@@ -7,8 +7,45 @@
   "about": "普段使う駅で次の電車を知りたいときや、声を出せずにDiscordの会話に入りづらいとき。そんな場面からアプリやBotをつくっています。使う人に試してもらい、最初に見たい情報や迷った操作を聞いて、次の改善を決めています。",
   "skills": [
     "画面設計",
-    "ボット開発",
+    "Bot開発",
     "AI研究"
+  ],
+  "tools": [
+    {
+      "name": "VS Code",
+      "months": 60,
+      "label": "5年"
+    },
+    {
+      "name": "Railway",
+      "months": 24,
+      "label": "2年"
+    },
+    {
+      "name": "Google Colab",
+      "months": 12,
+      "label": "1年"
+    },
+    {
+      "name": "Blender",
+      "months": 12,
+      "label": "1年"
+    },
+    {
+      "name": "MATLAB",
+      "months": 6,
+      "label": "6か月"
+    },
+    {
+      "name": "Vercel",
+      "months": 6,
+      "label": "6か月"
+    },
+    {
+      "name": "Figma",
+      "months": 5,
+      "label": "5か月"
+    }
   ],
   "projects": [
     {

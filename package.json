@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Original clockwork atelier GitHub profile for AMZ-jpcslr",
+  "description": "GitHub profile README matching the paper-and-brass workshop portfolio of AMZ-jpcslr",
   "engines": {
     "node": ">=22"
   },
